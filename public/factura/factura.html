@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/factura.style.css">
+  <title>Correos de Costa Rica</title>
+</head>
+
+<body>
+  <div class="mainContainer">
+    <div class="sideBar">
+      <div class="logo">
+        <img src="img/logo_correoscr.png" alt="logo_Correos_CR">
+      </div>
+      <div class="sideBarContent">
+        <div class="userPerfil">
+          <div class="userPerfilAvatar">
+            <img src="img/avatar.png" alt="Avatar default">
+          </div>
+          <div class="userPerfilInfo">
+            <h3>Nombre cliente</h3>
+            <h4>Rol</h4>
+            <a href="#">Editar perfil
+              <i class="far fa-edit"></i>
+            </a>
+          </div>
+        </div>
+        <ul class="sideBarMenu">
+          <li>
+            <a href="#">
+              <span class="icon iconMenu">
+                <i class="far fa-file-alt"></i>
+              </span>
+              Nombre item
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon iconMenu">
+                <i class="fas fa-truck"></i>
+              </span>
+              Nombre item
+            </a>
+          </li>
+          <li class="activeItem">
+            <a href="#">
+              <span class="icon iconMenu">
+                <i class="fas fa-clipboard-list"></i>
+              </span>
+              Nombre item
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon iconMenu">
+                <i class="fas fa-box"></i>
+              </span>
+              Nombre item
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="innerContainer">
+      <header class="headerSesion">
+        <button type="button" class="button buttonIcon">
+          <span class="icon">
+            <i class="fas fa-sign-out-alt"></i>
+          </span>
+          Cerrar sesión
+        </button>
+      </header>
+      <div class="content">
+        <h1 class="title titleUnderline">Generar factura</h1>
+        <div class="headerfactura">
+          <div class="logofactura">
+            <img src="img/logo_correoscr.png" alt="logo_Correos_CR">
+          </div>
+          <h2>Factura por servicios</h2>
+        </div>
+
+        <form name="form">
+
+
+          <div class='factura' class="inputContainer">
+            <label for="textSucursal">Sucursal</label>
+            <div class="input">
+              <p id="textSucursal">
+            </div>
+          </div>
+          <div class='factura' class="inputContainer">
+            <label for="textNumerofactura">N˙ factura</label>
+            <div class="input">
+              <p id="textNumerofactura">
+            </div>
+          </div>
+          <div class='factura' class="inputContainer">
+            <label for="textNombrecliente">Nombre del cliente</label>
+            <div class="input">
+              <p id="textNombrecliente">
+            </div>
+          </div>
+          <div class='factura' class="inputContainer">
+            <label for="textDireccioncliente">Dirección</label>
+            <div class="input">
+              <p id="textDireccioncliente">
+            </div>  
+          </div>
+        
+          <br>
+          <br>
+          
+          <h3>Detalle:</h3>
+            <br>
+            <div class='factura' class="inputContainer">
+              <label for="textNumbertracking">Número de orden:</label>
+              <p id="textNumbertracking"></p>
+            </div>
+            <div class='factura' class="inputContainer">
+              <label for="sltTipoarticulo">Tipo artículo</label>
+              <div >
+                <p id="sltTipoarticulo">
+                  <option value="Paquete">Paquete</option>
+                  <!-- <option value="Documento">Documento</option> -->
+                </p>
+              </div>
+            </div>
+
+            <div class='factura' class="inputContainer">
+              <label for="textMontocategoria">Impuestos:</label>
+              <div >
+                <p id="textMontocategoria">
+              </div>
+            </div>
+            <div class='factura' class="inputContainer">
+              <label for="textMontokilometros">Monto por kilómetros</label>
+              <div>
+                <p id="textMontokilometros">
+              </div>
+            </div>
+
+            <div class='factura' class="inputContainer">
+              <label for="textMontokilos">Monto por kilos</label>
+              <div>
+                <p id="textMontokilos">
+                  <option value="MontoKilometro">1234</option>
+              </div>
+            </div>
+
+            <div class='factura' class="inputContainer">
+              <label for="textMontototal">Total:</label>
+              <div>
+                <p name="textMontototal">
+              </div>
+            </div>
+
+          
+
+
+
+          <div class="buttonContainer">
+            <button type="button" class="button">Imprimir</button>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <div class="footerContent">
+          <p>
+            <i class="fas fa-phone"></i> Central telefónica : +506 800-900-2000</p>
+          <p>
+            <i class="fas fa-envelope"></i> Email : srvclientes@correos.go.cr</p>
+        </div>
+        <div class="logo">
+          <img src="img/logo_correoscr.png" alt="logo_Correos_CR">
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/controlador.factura.js"> </script>
+</body>
+
+</html>

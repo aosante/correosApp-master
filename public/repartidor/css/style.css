@@ -1,0 +1,73 @@
+select{
+    height: 18px;
+}
+
+.filtro{
+    width: 605px;
+    display: inline-block;
+}
+
+.iconFiltro{
+    display: inline-block;
+    width: 8%;
+    padding: 8px;
+    margin-right: 4px;
+}
+
+.inputContainerFiltro #txtFiltro{
+    display: inline-block;
+    width: 500px;
+}
+
+.buttonContainer{
+    text-align: center;
+    margin-top: 15%;
+}
+
+.col3{
+    -webkit-flex: auto;
+    flex: auto;
+    width: 33%;
+}
+
+.inputContainerfoto{
+    object-position: center;
+    top: 40%;
+    right: 20%;
+    transform: translate(0% -50%);
+    margin-top: 74px;
+    text-align: center;
+}
+.icono{
+    text-align: center;
+    margin-right: 4px;
+    padding: 8px;
+}
+.input_error{
+    border:1px solid red;
+}
+/*carga de imagenas*/
+
+#btnSeleccionarImagen{
+    background: rgba(52,152,219,1.0);
+    border: 2px solid #34495e;
+    color: #fff;
+    padding: 5px 5px;
+}
+#btnSeleccionarImagen:hover{
+    background:  #34495e;
+    border: 2px solid #3498db;
+}
+
+.acciones{
+    text-align: center;
+    width: 150px;
+}
+
+
+table .fa-edit:before {
+    color: black;
+  }
+
+
+

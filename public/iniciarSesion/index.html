@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/iniciarSesion.style.css">
+  <title>Correos de Costa Rica</title>
+</head>
+<body>
+  <div class="mainContainer">
+    <header class="headerSesion">
+      <div class="logo"><img src="../img/logo_correoscr.png" alt="logo_Correos_CR"></div>
+      <div class="userPerfilInfo">
+        <button type="button" class="button buttonIcon">
+          <span class="icon"><i class="fas fa-home"></i></span>
+          <a href="../index.html">Inicio</a>
+        </button>
+      </div>
+    </header>
+    <div class="innerContainer">
+      <div class="content">
+        <h1 class="title titleUnderline">Iniciar sesión</h1>
+        <form name="formIniciarSesion" class="formIniciarSesion">
+          <div class="inputContainer">
+            <label for="Email">Correo electrónico</label>
+            <input class="input" type="email" data-tipo-input="email" name="Email" id="sesionEmail">
+          </div>
+          <div class="inputContainer">
+            <label for="password">Contraseña</label>
+            <input class="input" type="password" id="sesionPassword" name="password">
+          </div>
+          <button type="button" id="checkUsuario" class="button">Iniciar sesión</button>
+          <!-- <a href="#" class="link">Restaurar contraseña</a> -->
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footerContent">
+        <p><i class="fas fa-phone"></i> Central telefónica : +506 800-900-2000</p>
+        <p><i class="fas fa-envelope"></i> Email : srvclientes@correos.go.cr</p>
+      </div>
+      <ul class="footerSociaLinks">
+        <li><a href="https://www.facebook.com/CorreosdeCostaRica/"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://twitter.com/CorreosCR"><i class="fab fa-twitter-square"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="../js/localStorage.servicio.js"></script>
+  <script src="../js/servicios.js"></script>
+  <script src="js/iniciarSesion.controller.js"></script>
+</body>
+</html>

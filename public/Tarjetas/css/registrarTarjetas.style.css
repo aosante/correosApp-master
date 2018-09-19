@@ -1,0 +1,44 @@
+.ListaMetodos {
+    margin-bottom: 100px;
+}
+
+.iconfilter{
+    padding: 8px;
+    margin-right: 4px;
+}
+.iFiltroMetodos{
+    width: 605px;
+    display: inline-block;
+}
+
+.ed-delink{
+    font-size: 20px;
+}
+.ed-delink:hover{
+    color: rgb(95, 179, 62);
+}
+.disable{
+    color: #e74c3c;
+}
+
+.inputNumber{
+    width: 100px;
+    display: inline-block;
+}
+.inputContainerNumber{
+    width: 300px;
+    display: inline-block;
+}
+.inputContainerfecha{
+    width: 210px;
+    display: inline-block;
+    margin-left: 11px;
+}
+.inputContainercvv{
+    width: 102px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.error{
+    border-color: red;
+}

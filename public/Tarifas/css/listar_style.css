@@ -1,0 +1,53 @@
+
+  
+  .filtro {
+    width: 95%;
+    display: inline-block;
+  }
+  
+  
+  .acciones {
+    width: 50px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .iconfiltro {
+    padding: 8px;
+    margin-right: 4px;
+  }
+  
+  .fas .fa-times {
+    color: #000000;
+  }
+  
+  #btnSeleccionarImagen {
+    color: #000000;
+    padding: 8px 12px;
+    margin-top: 10px;
+  }
+  
+  #btnSeleccionarImagen:hover {
+    background-color: rgb(156, 151, 151);
+  }
+  
+  .fa-edit:before {
+    color: black;
+  }
+  
+  .fa-times:before {
+    color: #000000;
+  }
+
+  #iPerfil::before {
+    color: #fff;
+  }
+
+  #editarPerfil:before {
+    color: #fff;
+  }
+
+  #indicacion {
+    margin-bottom: 12px;
+  }
+  

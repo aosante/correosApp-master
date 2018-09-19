@@ -1,0 +1,30 @@
+.iconfilter{
+    padding: 8px;
+    margin-right: 4px;
+}
+.iFiltroConv{
+    width: 605px;
+    display: inline-block;
+}
+
+.ed-delink{
+    font-size: 20px;
+}
+.ed-delink:hover{
+    color: rgb(95, 179, 62);
+}
+.disable{
+    color: #e74c3c;
+}
+.acciones{
+    width: 50px;
+    text-align: center;
+}
+
+.fa-edit {
+    color: black;
+}
+
+#perfil {
+    color: white;
+}

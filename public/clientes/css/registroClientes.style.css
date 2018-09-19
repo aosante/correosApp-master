@@ -1,0 +1,11 @@
+.registrarUsuarioButton {
+  margin: 0 auto;
+  display: block;
+  width: 30%;
+}
+
+.titleUnderline .desactivarCuenta {
+  float: right;
+  margin-top: -20px;
+  margin-right: 15px;
+}

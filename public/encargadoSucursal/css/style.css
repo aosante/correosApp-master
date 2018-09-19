@@ -1,0 +1,12 @@
+#btnSeleccionarImagen {
+  color: #000000;
+  padding: 8px 12px;
+  margin-top: 10px;
+  height: 135px;
+  width: 70%;;
+}
+
+#btnSeleccionarImagen:hover {
+  background-color: rgb(156, 151, 151);
+}
+  

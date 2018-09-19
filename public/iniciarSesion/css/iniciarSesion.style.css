@@ -1,0 +1,41 @@
+.innerContainer {
+  min-height: 800px;
+}
+
+.content {
+  width: 60%;
+  margin: 100px auto;
+}
+
+.titleUnderline {
+  text-align: center;
+}
+
+.formIniciarSesion {
+  width: 50%;
+  margin: 40px auto;
+}
+
+.formIniciarSesion .button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.formIniciarSesion label,
+.formIniciarSesion input {
+  font-size: 16px;
+}
+
+.formIniciarSesion .link {
+  display: inline-block;
+  color: #ef5b14;
+  font-weight: bold;
+  padding-top: 10px;
+  text-decoration: underline;
+}
+
+.infoPass {
+  font-style: italic;
+  font-size: 11px;
+  margin-top: 8px;
+}

@@ -1,0 +1,102 @@
+select{height: 18px;
+}
+
+#tblbase{
+    width: 640px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#tblbase th{
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background-color: rgb(95,179,62);
+    color:white;
+}
+
+#tblbase td{
+    padding: 11px;
+    background: #e8edff;
+    border-bottom: 1px solid #fff;
+    color: #1e2630;
+    border-top:1px solid transparent;
+}
+
+#tblbase tr{
+    padding: 20px;
+}
+
+#tblbase tr:hover td{
+background: #d0dafd;
+color: #339;
+}
+
+.filtro{
+    width: 605px;
+    display: inline-block;
+}
+
+.iconFiltro{
+    display: inline-block;
+    width: 8%;
+    padding: 8px;
+    margin-right: 4px;
+}
+
+.inputContainerFiltro #txtFiltro{
+    display: inline-block;
+    width: 500px;
+}
+
+.buttonContainer{
+    text-align: center;
+    margin-top: 15%;
+}
+
+.col3{
+    -webkit-flex: auto;
+    flex: auto;
+    width: 33%;
+}
+
+inputContainerfoto{
+    object-position: center;
+    top: 40%;
+    right: 20%;
+    transform: translate(0%--50%);
+    margin-top: 74px;
+    text-align: center;
+}
+.icono{
+    text-align: center;
+    margin-right: 4px;
+    padding: 8px;
+}
+.input_error{
+    border:1px solid red;
+}
+/*carga de imagenas*/
+
+#btnSeleccionarImagen{
+    background: rgba(52,152,219,1.0);
+    border: 2px solid #34495e;
+    color: #fff;
+    padding: 5px 5px;
+}
+#btnSeleccionarImagen:hover{
+    background:  #34495e;
+    border: 2px solid #3498db;
+}
+
+.acciones{
+    text-align: center;
+    width: 50px;
+}
+a{color: #000000;
+}
+
+
+
+

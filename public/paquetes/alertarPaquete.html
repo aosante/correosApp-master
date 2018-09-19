@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/alerta.style.css">
+  <title>Correos de Costa Rica - Alertar paquetes</title>
+</head>
+<body>
+  <div class="mainContainer">
+    <header class="headerSesion">
+      <div class="logo"><img src="../img/logo_correoscr.png" alt="logo_Correos_CR"></div>
+      <div class="userPerfilInfo">
+        <button type="button" class="button buttonIcon">
+          <span class="icon"><i class="fas fa-home"></i></span>
+          <a href="../index.html">Inicio</a>
+        </button>
+        <button type="button" class="button buttonIcon" id="cerrarSesion">
+          <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+          Cerrar sesión
+        </button>
+        <h3 id="userNombre"></h3>
+        <div class="userPerfilAvatar">
+          <img src="../img/avatar.png" id="userPerfilAvatar" alt="Avatar default">
+        </div>
+      </div>
+    </header>
+    <div class="innerContainer">
+      <div class="menu">
+        <ul class="menuOpciones" id="menuOpciones">
+          <li class="editarPerfil">
+            <a href="#" id="editarPerfil">
+              <span class="icon iconMenu"><i class="far fa-edit"></i></span>
+              <span class="linkTexto" id="editarPerfilText">Editar perfil</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1 class="title titleUnderline">Alertar paquete nuevo</h1>
+        <form id="formAlertarPaquete" class="row">
+          <div class="col6 colWithPaddingRight">
+            <div class="inputContainer">
+              <label for="numeroTracking">Número de tracking</label>
+              <input class="input" type="number" name="text" data-tipo-input="numero" data-cantidad="9" id="numeroTracking" required>
+            </div>
+            <div class="inputContainer">
+              <label for="peso">Peso (kg)</label>
+              <input class="input" type="number" name="peso" id="peso" data-tipo-input="numero" required>
+            </div>
+            <div class="inputContainer">
+              <label for="precioInicial">Precio (colones)</label>
+              <input class="input" type="number" name="precioInicial" id="precioInicial" data-tipo-input="numero" required>
+            </div>
+            <div class="inputContainer">
+              <label for="opSucursal">Sucursal</label>
+              <input class="input" type="text" disabled name="sucursal" id="sucursal" required>
+            </div>
+          </div>
+          <div class="col6 colWithPaddingLeft">
+            <div class="inputContainer">
+              <label for="opCourier">Seleccione un courier</label>
+              <div class="input">
+                <select name="opCourier" id="opCourier" required> 
+                </select>
+              </div>
+            </div>
+            <div class="inputContainer">
+              <label for="opCategoria">Seleccione una categoria</label>
+              <div class="input">
+                <select name="opCategoria" id="opCategoria" required> 
+                </select>
+              </div>
+            </div>
+            <div class="inputContainer">
+              <label for="opTarjeta">Seleccione una forma de pago</label>
+              <div class="input">
+                <select name="opTarjeta" id="opTarjeta" required> 
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+        <button type="button" id="alertarPaquete" class="button alertaFormButton">Alertar paquete</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerContent">
+        <p><i class="fas fa-phone"></i> Central telefónica : +506 800-900-2000</p>
+        <p><i class="fas fa-envelope"></i> Email : srvclientes@correos.go.cr</p>
+      </div>
+      <ul class="footerSociaLinks">
+        <li><a href="https://www.facebook.com/CorreosdeCostaRica/"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://twitter.com/CorreosCR"><i class="fab fa-twitter-square"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="../Tarifas/tarifas.service.js"></script>
+  <script src="../tiposArticulos/tiposArticulo.service.js"></script>
+  <script src="../js/localStorage.servicio.js"></script>
+  <script src="../js/servicios.js"></script>
+  <script src="../js/menuOpciones.js"></script>
+  <script src="js/alertar.controller.js"></script>
+</body>
+</html>

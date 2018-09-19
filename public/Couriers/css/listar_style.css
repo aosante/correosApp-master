@@ -1,0 +1,113 @@
+
+
+  /* Form */
+
+  
+ 
+ 
+
+  .filtro {
+    width: 605px;
+    display: inline-block;
+  }
+
+
+  .error {
+      border: 2px solid red;
+  }
+  /* Form Fin */
+
+  /*Tables*/
+/*ESTO ES AGREGADO*/
+  #tblCouriers {
+    width: 640px;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+
+  th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background-color: rgb(95, 179, 62);
+    color: #fff;
+  }
+  td {
+    padding: 8px;
+    background: #e8edff;
+    border-bottom: 1px solid #fff;
+    color: #1e2630;
+    border-top: 1px solid transparent;
+  }
+
+   #nombreC, #numeroC {
+      text-align: left;
+  }
+
+  .acciones {
+    width: 50px;
+    text-align: center;
+  }
+
+  tr:hover td{
+    background: #d0dafd;
+    color: #339;
+  }
+
+  /*Tables Fin*/
+  
+  /* Icons */
+
+  .iconfiltro {
+    padding: 8px;
+    margin-right: 4px;
+  }
+  
+  .icon {
+    color: #043d5a;
+    font-size: 23px;
+    vertical-align: sub;
+  }
+  
+  .iconMenu {
+    color: #fff;
+    font-size: 24px;
+    width: 32px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+  }
+
+
+/*ESTO ES AGREGADO*/
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .fas .fa-times {
+    color: #000000;
+  }
+
+
+
+  
+  
+  /* Icons Fin */
+  
+  /* Buttons */
+  
+  
+  
+  #btnSeleccionarImagen {
+  color: #000000;
+  padding: 8px 12px;
+  margin-top: 10px;
+  }
+
+  #btnSeleccionarImagen:hover {
+    background-color: rgb(156, 151, 151);
+  }
+  /* Buttons Fin */
+  
+ 

@@ -1,0 +1,39 @@
+.iconfiltro {
+    padding: 8px;
+    margin-right: 4px;
+}
+
+
+  
+  .filtro {
+    width: 605px;
+    display: inline-block;
+  }
+  
+  .acciones {
+    width: 50px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .iconfiltro {
+    padding: 8px;
+    margin-right: 4px;
+  }
+  
+  .fas .fa-times {
+    color: #000000;
+  }
+  
+
+  table .fa-edit:before {
+    color: black;
+  }
+  
+  .fa-times::before {
+    color: #000000;
+  }
+
+  #editarPerfil::before {
+      color: #fff;
+  }

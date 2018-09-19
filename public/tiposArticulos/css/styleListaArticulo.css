@@ -1,0 +1,34 @@
+.iconfilter
+{
+  padding:8px;
+  margin-right:4px;
+}
+
+.iFiltroConv
+{
+  width:605px;
+  display: inline-block;
+}
+
+.lupa
+{
+  width: 10px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.fa-edit {
+  color: #000000;
+}
+
+#editar:before {
+  color: #fff;
+}
+
+.acciones {
+  text-align: center;
+}
+
+.input {
+  width: 400px;
+}

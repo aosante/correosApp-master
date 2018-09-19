@@ -1,0 +1,22 @@
+{
+  "name": "correosapp",
+  "version": "1.0.0",
+  "description": "Arquitectura de proyecto Correos App",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Pabskun",
+  "dependencies": {
+    "connect": "^3.6.6",
+    "express": "^4.15.2",
+    "mongoose": "^5.0.11",
+    "morgan": "^1.9.0",
+    "nodemailer": "^4.6.4",
+    "serve-static": "^1.13.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  },
+  "license": "ISC"
+}

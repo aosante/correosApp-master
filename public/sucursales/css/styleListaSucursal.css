@@ -1,0 +1,18 @@
+#txtFiltro
+{
+  padding:8px;
+  margin-right:4px;
+}
+
+#txtFiltro
+{
+  width:605px;
+  display: inline-block;
+}
+
+.lupa
+{
+  width: 10px;
+  display: inline-block;
+  margin-right: 6px;
+}

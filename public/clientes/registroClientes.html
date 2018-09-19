@@ -1,0 +1,163 @@
+<!--Hay que cagregar inputs para la direccion del cliente y la opcion de seleccionar la sucursal-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/registroClientes.style.css">
+  <title>Correos de Costa Rica - Registrar cliente - Cliente</title>
+</head>
+<body>
+  <div class="mainContainer">
+    <header class="headerSesion">
+      <div class="logo"><img src="../img/logo_correoscr.png" alt="logo_Correos_CR"></div>
+      <div class="userPerfilInfo">
+        <button type="button" class="button buttonIcon">
+          <span class="icon"><i class="fas fa-home"></i></span>
+          <a href="../index.html">Inicio</a>
+        </button>
+        <button type="button" class="button buttonIcon" id="cerrarSesion">
+          <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+          Cerrar sesión
+        </button>
+        <h3 id="userNombre"></h3>
+        <div class="userPerfilAvatar">
+          <img src="../img/avatar.png" id="userPerfilAvatar" alt="Avatar default">
+        </div>
+      </div>
+    </header>
+    <div class="innerContainer">
+      <div class="menu">
+        <ul class="menuOpciones" id="menuOpciones">
+          <li class="editarPerfil">
+            <a href="#" id="editarPerfil">
+              <span class="icon iconMenu"><i class="far fa-edit"></i></span>
+              <span class="linkTexto" id="editarPerfilText">Editar perfil</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1 class="title titleUnderline">Registrar Persona Física</h1>
+        <form id="formRegistroClientes" class="row formRegistroClientes">
+          <div class="col6 colWithPaddingRight">
+            <div class="inputContainer">
+              <label for="text">Primer nombre *</label>
+              <input class="input" type="text" name="nombre" data-tipo-input="texto" required>
+            </div>
+            <div class="inputContainer">
+              <label for="text">Primer apellido *</label>
+              <input class="input" type="text" name="primerApellido" data-tipo-input="texto" required>
+            </div>
+            <div class="inputContainer">
+              <label for="text">Cédula *</label>
+              <input class="input" type="text" name="cedula" data-tipo-input="numero" data-cantidad="9" required>
+            </div>
+            <div class="inputContainer">
+              <label for="text">Teléfono 1 *</label>
+              <input class="input" type="text" name="telefono1" data-tipo-input="tel" required>
+            </div>
+            <div class="inputContainer">
+              <label for="text">Fecha de nacimiento *</label>
+              <input class="input" type="date" name="fechaNacimiento" required>
+            </div>
+            <div class="inputContainer">
+              <label for="text">Foto de perfil</label>
+              <div class="input" id="inputFotoPerfil">
+                <div class="fotoPerfil"><img id="previewFoto" alt="Foto perfil"></div>
+                <div class="inputFotoPerfil">
+                  <button type="button" class="button">Agregar foto</button>
+                  <input required class="cloudinary-fileupload" data-url="https://api.cloudinary.com/v1_1/app-correos-costarica/auto/upload" type="file" name="file">
+                </div>
+              </div>
+            </div>
+            <div class="inputContainer">
+              <label for="text">Género *</label>
+              <div class="input">
+                <select name="genero" required>
+                  <option value="masculino">Masculino</option>
+                  <option value="femenino">Femenino</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+            </div>
+            <div class="inputContainer">
+              <label for="text">Seleccione una sucursal *</label>
+              <div class="input">
+                <select name="sucursal" id="opSucursal" required>
+                  <!-- <option value="Sucursal #1">Sucursal #1</option>
+                  <option value="Sucursal #2">Sucursal #2</option>
+                  <option value="Sucursal #3">Sucursal #3</option> -->
+                </select>
+              </div>
+            </div>
+            <div class="inputContainer"><br> (* Campos obligatorios) </div>
+          </div>
+          <div class="col6 colWithPaddingLeft">
+            <div class="inputContainer">
+              <label for="text">Segundo nombre</label>
+              <input class="input" type="text" name="segundoNombre" data-tipo-input="texto">
+            </div>
+            <div class="inputContainer">
+              <label for="text">Segundo apellido</label>
+              <input class="input" type="text" name="segundoApellido" data-tipo-input="texto">
+            </div>
+            <div class="inputContainer">
+              <label for="text">Correo electrónico *</label>
+              <input class="input" type="text" name="email" data-tipo-input="email" required>
+            </div>
+            <div class="inputContainer">
+              <label for="text">Teléfono 2</label>
+              <input class="input" type="text" name="telefono2" data-tipo-input="tel">
+            </div>
+            <div class="inputContainer">
+              <label for="text">Provinicia*</label>
+              <input type="text" class="input" name="provincia" data-tipo-input="texto" required>
+            </div>
+            <div class="inputContainer">
+              <label for="text">Cantón*</label>
+              <input type="text" class="input" name="canton" required>
+            </div>
+            <div class="inputContainer">
+              <label for="text">Distrito*</label>
+              <input type="text" class="input" name="distrito" required>
+            </div>
+            <div class="inputContainer">
+              <label for="text">Dirección exacta*</label>
+              <textarea class="input" name="direccion"cols="30" rows="10" required></textarea>
+            </div>
+          </div>
+        </form>
+        <button type="button" id="registrarClientes" class="button registrarUsuarioButton">Registrar</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerContent">
+        <p><i class="fas fa-phone"></i> Central telefónica : +506 800-900-2000</p>
+        <p><i class="fas fa-envelope"></i> Email : srvclientes@correos.go.cr</p>
+      </div>
+      <ul class="footerSociaLinks">
+        <li><a href="https://www.facebook.com/CorreosdeCostaRica/"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://twitter.com/CorreosCR"><i class="fab fa-twitter-square"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/cloudinary/cloudinary_js/master/js/jquery.ui.widget.js"></script>
+  <script src="https://rawgit.com/cloudinary/cloudinary_js/master/js/jquery.iframe-transport.js"></script>
+  <script src="https://rawgit.com/cloudinary/cloudinary_js/master/js/jquery.fileupload.js"></script>
+  <script src="https://rawgit.com/cloudinary/cloudinary_js/master/js/jquery.cloudinary.js"></script>
+  <script src="../js/localStorage.servicio.js"></script>
+  <script src="../js/servicios.js"></script>
+  <script src="../js/menuOpciones.js"></script>
+  <script src="js/registroClientes.controller.js"></script>
+</body>
+</html>

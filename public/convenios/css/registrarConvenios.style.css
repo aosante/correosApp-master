@@ -1,0 +1,11 @@
+.guardar{
+    display: block;
+}
+
+.error{
+    border-color: red;
+}
+
+#notificacion {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <title>Correos de Costa Rica - Editar perfil - Encargados de sucursal - Listar usuarios</title>
+</head>
+<body>
+  <div class="mainContainer">
+    <header class="headerSesion">
+      <div class="logo"><img src="../img/logo_correoscr.png" alt="logo_Correos_CR"></div>
+      <div class="userPerfilInfo">
+        <button type="button" class="button buttonIcon">
+          <span class="icon"><i class="fas fa-home"></i></span>
+          <a href="../index.html">Inicio</a>
+        </button>
+        <button type="button" class="button buttonIcon" id="cerrarSesion">
+          <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+          Cerrar sesión
+        </button>
+        <h3 id="userNombre"></h3>
+        <div class="userPerfilAvatar">
+          <img src="../img/avatar.png" id="userPerfilAvatar" alt="Avatar default">
+        </div>
+      </div>
+    </header>
+    <div class="innerContainer">
+      <div class="menu">
+        <ul class="menuOpciones" id="menuOpciones">
+          <li class="editarPerfil">
+            <a href="#" id="editarPerfil">
+              <span class="icon iconMenu"><i class="far fa-edit"></i></span>
+              <span class="linkTexto" id="editarPerfilText">Editar perfil</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1 class="title titleUnderline">Modificar datos de encargados de sucursal</h1>
+        <form name="form" class="row">
+          <div class="col6 colWithPaddingRight">
+            <div class="inputContainer">
+              <label for="txtPrimerNombre">Primer Nombre*</label>
+              <input id="txtPrimerNombre" type="text" name="text" data-tipo-input="texto" class="input" required>
+            </div>
+            <div class="inputContainer">
+              <label for="txtPrimerApellido">Primer Apellido*</label>
+              <input type="text" name="text" id="txtPrimerApellido" data-tipo-input="texto" class="input" required>
+            </div>
+            <div class="inputContainer">
+              <label for="txtId">Identificación*</label>
+              <input type="text" id="txtId" name="text" class="input" data-tipo-input="numero" data-cantidad="9" required>
+            </div>
+            <div class="inputContainer">
+              <label for="txtCorreo">Correo electrónico*</label>
+              <input type="email" id="txtCorreo" name="text" data-tipo-input="email" data-tipo-email="correos.cr" class="input" required>
+            </div>
+            <div class="inputContainer">
+              <label for="txtTel1">Teléfono1*</label>
+              <input type="text" class="input" id="txtTel1" data-tipo-input="tel" required>
+            </div>
+            
+            <div class="inputContainer">
+                <label for="dtFecha">Fecha de nacimiento*</label>
+                <input type="date" class="input" id="dtFecha" required>
+            </div>
+            <div class="inputContainer">
+              <h3>*(Campos obligatorios)</h3>
+            </div>
+          </div><!--columna izquierda-->
+          <div class="col6 colWithPaddingLeft">
+            <div class="inputContainer">
+              <label for="txtSegundoNombre">Segundo Nombre</label>
+              <input class="input" type="text" name="text" data-tipo-input="texto" id="txtSegundoNombre">
+            </div>
+            <div class="inputContainer">
+              <label for="txtSegundoApellido">Segundo Apellido</label>
+              <input type="text" class="input" data-tipo-input="texto" id="txtSegundoApellido">
+            </div>  
+              <div class="inputContainer">
+                  <label for="text">Foto de perfil</label>
+                  <div class="input" id="inputFotoPerfil">
+                    <div class="fotoPerfil"><img id="previewFoto" alt="Foto perfil"></div>
+                    <div class="inputFotoPerfil">
+                      <button type="button" class="button">Agregar foto</button>
+                      <input required class="cloudinary-fileupload" data-url="https://api.cloudinary.com/v1_1/app-correos-costarica/auto/upload" type="file" name="file">
+                    </div>
+                  </div>
+                </div>
+            <div class="inputContainer">
+              <label for="txtTel2">Teléfono2</label>
+              <input type="text" class="input" data-tipo-input="tel" id="txtTel2">
+            </div>
+              <div class="inputContainer">
+                <label for="opGenero">Género</label>
+                <div class="input"><select id="opGenero">
+                  <option value="masculino">Masculino</option>
+                  <option value="femenino">Femenino</option>
+                  <option value="otro">Otro</option>
+                </select></div>
+              </div>
+              <div class="inputContainer">
+                  <label for="opSucursal">Sucursal</label>
+                  <div class="input">
+                    <select id="opSucursal">
+                    
+                    </select>
+                  </div>
+              </div>
+          </div><!--columna derecha-->
+        </form>
+
+        <button type="button" id="btnActualizar" class="button">Actualizar</button>
+      </div> 
+    </div>
+      <footer>
+        <div class="footerContent">
+          <p><i class="fas fa-phone"></i> Central telefónica : +506 800-900-2000</p>
+          <p><i class="fas fa-envelope"></i> Email : srvclientes@correos.go.cr</p>
+        </div>
+        <ul class="footerSociaLinks">
+          <li><a href="https://www.facebook.com/CorreosdeCostaRica/"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="https://twitter.com/CorreosCR"><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+      </footer>
+  </div>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/cloudinary/cloudinary_js/master/js/jquery.ui.widget.js"></script>
+  <script src="https://rawgit.com/cloudinary/cloudinary_js/master/js/jquery.iframe-transport.js"></script>
+  <script src="https://rawgit.com/cloudinary/cloudinary_js/master/js/jquery.fileupload.js"></script>
+  <script src="https://rawgit.com/cloudinary/cloudinary_js/master/js/jquery.cloudinary.js"></script>
+
+  <script src="../js/localStorage.servicio.js"></script>
+  <script src="../js/servicios.js"></script>
+  <script src="../js/menuOpciones.js"></script>
+  <script src="e_sucursal.service.js"></script>
+  <script src="js/modificar_e_sucursal.controller.js"></script>
+</body>
+</html>
